@@ -3,13 +3,146 @@
 <head>
 <meta charset="utf-8" />
 <title>My Kartoffelsalats</title>
-<style type="text/css">
+<link href="//fonts.googleapis.com/css?family=Bitter" rel="stylesheet" />
+<style>
 html, body { height: 100%; }
-body { position: relative; margin: 0; padding: 0;font: 13px/1 sans-serif; color: #404040; }
-p { position: absolute; top: 50%;width: 100%;margin-top: -.5em;text-align: center;text-transform: lowercase; }
+body {
+margin: 0;
+padding: 0;
+font: 100%/1.5 bitter, sans-serif;
+color: #606064;
+counter-reset: numnum;
+}
+h1, h2 {
+text-align: center;
+}
+h1 {
+font-size: 200%;
+margin: 1em; 0
+}
+h2 {
+margin: 0 0 1em;
+font-size: 100%;
+font-family: sans-serif;
+text-transform: uppercase;
+}
+p, ul, ol {
+margin: 0 0 1.5em;
+padding: 0;
+}
+ul li {
+list-style: none;
+margin: 0;
+padding: 0 0 0 1em;
+}
+ul li:before {
+content: '–';
+position: relative;
+left: -1em;
+color: #d0d0d9;
+}
+section {
+border-top: 1px solid #eee;
+counter-increment: numnum;
+}
+section>div, footer>p {
+position: relative;
+max-width: 52em;
+margin: 0 auto;
+padding: 1.5em;
+}
+section>div:before {
+content: counter(numnum);
+position: absolute;
+right: .5em;
+top: 1em;
+width: 1.5em;
+height: 1.5em;
+font-size: 200%;
+text-align: center;
+color: #fff;
+background: magenta;
+border-radius: 999px;
+}
+
+.desc {
+padding: 1em;
+margin: 0 0 1.5em;
+text-align: center;
+text-shadow: 0 1px 2px rgba(255,255,255,1);
+background: #eee;
+border-radius: 3px;
+}
+footer {
+text-align: center;
+font-size: 12px;
+border-top: 1px solid #eee;
+}
 </style>
 </head>
 <body>
-<p>Bald …</p>
+<header>
+	<h1>My Kartoffelsalats</h1>
+</header>
+<section>
+<div>
+<h2>Chez Bonnet</h2>
+<h3></h3>
+
+<div class="desc">Mit Mayonnaise und Bacon</div>
+
+<div class="ingredients">
+
+<p>Für 4 Personen werden benötigt:</p>
+
+<ul>
+<li>ca. 1,5 kg festkochende Kartoffeln</li>
+<li>2 Eier</li>
+<li>1 große Zwiebel</li>
+<li>2–3 Eßlöffel Mayonnaise</li>
+<li>1 Packung Tulip Bacon</li>
+<li>1–2 Teelöffel Senf</li>
+<li>ca. 100ml Öl</li>
+<li>Pfeffer</li>
+<li>Salz</li>
+</ul>
+
+</div>
+
+<div class="preparation">
+
+<p>Die rohen Eier, kleingeschnittene Zwiebel, Mayonnaise und  Senf in einer Rührschüssel mit dem Pürrierstab verrühren. Öl zulaufen lassen. <br />
+Den Bacon klein schneiden und scharf anbraten. Dann in die Soße geben und ebenfalls pürrieren.</p>
+
+<p>Nach Geschmack salzen und pfeffern. Die Soße muss scharf und pikant sein, da die Kartoffeln viel Geschmack wegnehmen.</p>
+
+<p>Die vorzugsweise kleinen Kartoffeln kochen, pellen und in Scheiben schneiden. <br />
+Die Soße über die noch etwas warmen Kartoffeln geben, dabei schichtweise vorgehen. Die Kartoffeln sollen nicht schwimmen – dann lieber weniger Soße nehmen!</p>
+
+</div>
+
+</div>
+</section>
+<!--
+<section>
+<div>
+<h2></h2>
+<h3></h3>
+
+<div class="desc"></div>
+
+<div class="ingredients"></div>
+
+<div class="preparation"></div>
+
+</div>
+</section>
+-->
+
+<footer>
+<p>2014 – vorderdeck – neue kartoffeln</p>
+
+</footer>
+
 </body>
 </html>
